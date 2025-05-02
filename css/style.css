@@ -39,10 +39,23 @@ header img {
 h2 {
     font-family: Gluten;
     text-align: center;
-    font-size: 40pt;
+    font-size: 50pt;
     
 }
 
+h3 {
+    font-family: Gluten;
+    text-align: center;
+    font-size: 30pt;
+    
+}
+
+h4 {
+    font-style: italic;
+    text-align: left;
+    font-size: 20pt;
+    
+}
 
 body {
     font-family: Patrick Hand;
@@ -91,6 +104,13 @@ body {
     padding-right: 1px;
 }
 
+#dogs figcaption {
+    padding-left: 30px;
+    
+}
+
+/* Reviews */
+
 #reviews {
     background-color: #ECEFCA;
     padding-top: 5px;
@@ -100,6 +120,15 @@ body {
     box-shadow: 5px 5px 5px 5px black;
     margin-bottom: 2rem;
 }
+
+#reviews div p {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/-1;
+    padding-right: 1px;
+}
+
+/* Footer */
 
 footer {
     background-color: #ECEFCA;
