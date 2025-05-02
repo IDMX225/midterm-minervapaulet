@@ -1,0 +1,11 @@
+body {
+    font-family: Gluten;
+    background-color: #ECEFCA;
+    color: #213448;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Indie Flower;
+    text-align: center;
+    font-size: 40pt;
+}
