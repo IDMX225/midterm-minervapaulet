@@ -2,19 +2,37 @@ h1 {
     font-family: Gluten;
     text-align: center;
     font-size: 60pt;
+   
 }
 
 header {
     text-align: center;
     display: block;
-    margin: .1em;
+
+}
+
+header img {
+    border-radius: 15px;
 }
 
 #hero {
+    background-color: #ECEFCA;
     text-align: center;
-    font-family: Indie Flower;
-    font-size: 15pt;
-    margin: .1em;
+    font-family: Patrick Hand;
+    font-size: 20pt;
+    
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: .1rem;
+    
+    box-shadow: 5px 5px 5px 5px black;
+    
+    
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
 
 }
 
@@ -22,21 +40,43 @@ h2 {
     font-family: Gluten;
     text-align: center;
     font-size: 40pt;
-    margin: .1em;
+    
 }
 
 
 body {
-    font-family: Indie Flower;
-    background-color: #ECEFCA;
+    font-family: Patrick Hand;
+    background-color: #213448;
     color: #213448;
+    font-size: 25pt;
+    
+    
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+
 }
+
+#floatingLogo {
+    float: left;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
 
 /* Dogs */
 
 #dogs {
-    border: 2px solid #547792;
+    background-color: #ECEFCA;
+    border: 10px solid #ECEFCA;
+
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px 5px black;
     margin-bottom: 2rem;
+ 
 }
 
 #dogs img {
@@ -45,4 +85,26 @@ body {
 
 #dogs figure {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    padding-right: 1px;
+}
+
+#reviews {
+    background-color: #ECEFCA;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 5px 5px 5px 5px black;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #ECEFCA;
+    margin-top: 1rem;
+    padding-top: 1rem solid black;
+    border: 10px solid #ECEFCA;
+    box-shadow: 5px 5px 5px 5px black;
 }
