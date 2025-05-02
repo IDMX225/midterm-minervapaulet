@@ -1,11 +1,48 @@
-body {
+h1 {
     font-family: Gluten;
+    text-align: center;
+    font-size: 60pt;
+}
+
+header {
+    text-align: center;
+    display: block;
+    margin: .1em;
+}
+
+#hero {
+    text-align: center;
+    font-family: Indie Flower;
+    font-size: 15pt;
+    margin: .1em;
+
+}
+
+h2 {
+    font-family: Gluten;
+    text-align: center;
+    font-size: 40pt;
+    margin: .1em;
+}
+
+
+body {
+    font-family: Indie Flower;
     background-color: #ECEFCA;
     color: #213448;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: Indie Flower;
+/* Dogs */
+
+#dogs {
+    border: 2px solid #547792;
+    margin-bottom: 2rem;
+}
+
+#dogs img {
+    max-width: 100%;
+}
+
+#dogs figure {
     text-align: center;
-    font-size: 40pt;
 }
