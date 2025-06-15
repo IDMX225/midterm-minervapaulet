@@ -1,7 +1,14 @@
 h1 {
     font-family: Gluten;
     text-align: center;
-    font-size: 60pt;
+   
+}
+
+h1, h2, .reviews-grid {
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    word-break: break-word;
    
 }
 
@@ -37,11 +44,22 @@ header img {
 
 }
 
+#hero p, .review p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
 h2 {
     font-family: Gluten;
     text-align: center;
     font-size: 50pt;
-    
 }
 
 h3 {
@@ -64,10 +82,9 @@ body {
     color: #213448;
     font-size: 25pt;
 
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 2rem auto;
+    max-width: 1400px;
+    padding: 0 2rem;
 
 
 }
@@ -80,7 +97,6 @@ body {
 
 
 /* Dogs */
-
 #dogs {
     background-color: #ECEFCA;
     border: 10px solid #ECEFCA;
@@ -89,7 +105,6 @@ body {
     box-shadow: 5px 5px 5px 5px black;
     margin: 0%;
     margin-bottom: 2rem;
- 
 }
 
 
@@ -116,33 +131,32 @@ body {
 }
 
 /* Reviews */
-
 #reviews {
     background-color: #ECEFCA;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
     box-shadow: 5px 5px 5px 5px black;
+    padding: 2rem;
     margin-bottom: 2rem;
 }
 
-#reviews div {
+.reviews-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column: 1/-1;
-    padding-right: 1px;
+    gap: 2rem;
 }
 
-#reviews div p {
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column: 1/-1;
-    padding-right: 1px;
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 /* Footer */
-
 footer {
     background-color: #ECEFCA;
     text-align: center;
@@ -152,8 +166,27 @@ footer {
     box-shadow: 5px 5px 5px 5px black;
 }  
 
-/* Tablet Size */
+/* Phone Size */
+@media screen and (min-width: 600px) {
 
+#floatingLogo {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+h1 {
+    padding-top: 1.5rem;
+}
+
+#hero p {
+    display: block;
+    text-align: center;
+}
+
+}
+
+/* Tablet Size */
 @media screen and (min-width: 60em) {
 
 #dogs figure {
@@ -170,10 +203,29 @@ footer {
     padding: 0;
 }
 
+.reviews-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
 }
 
 /* Large Screen Size */
 @media screen and (min-width: 100em) {
+body {
+    padding: 0;
+    margin: 0 auto;
+    background-color: #213448;
+  }
+
+#hero,
+#dogs,
+#reviews,
+footer {
+  max-width: 1400px;
+  margin: 2rem auto;
+}  
 
 #dogs {
     display: grid;
@@ -212,6 +264,34 @@ footer {
     grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.reviews-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.review h3 {
+    margin-top: 1rem;
+}
+
+.review p {
+    margin-top: 0.5rem;
+}
+
+.review h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    align-self: flex-end;
 }
 
 }
