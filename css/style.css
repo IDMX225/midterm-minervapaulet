@@ -28,11 +28,12 @@ header img {
     
     box-shadow: 5px 5px 5px 5px black;
     
-    
     margin-bottom: 2rem;
     margin-top: 2rem;
     margin-left: .1rem;
     margin-right: .1rem;
+
+    overflow: hidden;
 
 }
 
@@ -51,7 +52,7 @@ h3 {
 }
 
 h4 {
-    font-style: italic;
+    font-weight: bold;
     text-align: left;
     font-size: 20pt;
     
@@ -62,8 +63,6 @@ body {
     background-color: #213448;
     color: #213448;
     font-size: 25pt;
-    
-    
 
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -88,25 +87,32 @@ body {
 
     padding-top: 10px;
     box-shadow: 5px 5px 5px 5px black;
+    margin: 0%;
     margin-bottom: 2rem;
  
 }
 
+
 #dogs img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 #dogs figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/-1;
-    padding-right: 1px;
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 #dogs figcaption {
     padding-left: 30px;
-    
 }
 
 /* Reviews */
@@ -121,9 +127,16 @@ body {
     margin-bottom: 2rem;
 }
 
-#reviews div p {
+#reviews div {
     display: grid;
     grid-template-columns: 1fr;
+    grid-column: 1/-1;
+    padding-right: 1px;
+}
+
+#reviews div p {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1/-1;
     padding-right: 1px;
 }
@@ -132,8 +145,71 @@ body {
 
 footer {
     background-color: #ECEFCA;
+    text-align: center;
     margin-top: 1rem;
     padding-top: 1rem solid black;
     border: 10px solid #ECEFCA;
     box-shadow: 5px 5px 5px 5px black;
+}  
+
+/* Tablet Size */
+
+@media screen and (min-width: 60em) {
+
+#dogs figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+}
+
+#dogs figcaption {
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+}
+
+/* Large Screen Size */
+@media screen and (min-width: 100em) {
+
+#dogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+    border: 10px solid #ECEFCA;
+
+}
+
+#dogs figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+ }
+
+#dogs h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#dogs img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#dogs figcaption {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 }
