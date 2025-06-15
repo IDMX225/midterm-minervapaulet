@@ -1,11 +1,10 @@
 h1 {
     font-family: Gluten;
     text-align: center;
-   
+    font-size: 60pt;
 }
 
 h1, h2, .reviews-grid {
-    font-size: 3rem;
     margin-top: 2rem;
     padding-top: 2rem;
     word-break: break-word;
